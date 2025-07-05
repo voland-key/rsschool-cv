@@ -34,3 +34,48 @@ Programming skills:
 + MySQL, PostgreSQL
 + Redis
 + PHP 5.0++ as backend
+
+---
+### Code example:
+
+**Find the odd int [KATA from CODEWARS](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript):**
+Given an array of integers, find the one that appears an odd number of times.
+There will always be only one integer that appears an odd number of times.
+Examples:
+[7] should return 7, because it occurs 1 time (which is odd).
+[0] should return 0, because it occurs 1 time (which is odd).
+[1,1,2] should return 2, because it occurs 1 time (which is odd).
+[0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+[1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd). 
+
+```javascript
+function findOdd(A) {
+  const uniqueArray = []
+  var res = 0
+  // generate unique array
+  A.forEach(item => {
+      if (!uniqueArray.includes(item)) {
+          uniqueArray.push(item)
+      }
+  })
+  // count length of entries unique array in A array
+  uniqueArray.forEach(item => {
+    let idx = A.indexOf(item),
+        indices = [];
+    while (idx != -1) {
+      indices.push(idx);
+      idx = A.indexOf(item, idx + 1);
+    }
+    // if it ODD - then return
+    if (indices.length % 2 > 0) { 
+      res = item 
+    }
+    
+  });
+```
+---
+### Courses
+
+- HTML, CSS, Bootstrap Tutorials on the [W3S](https://w3schools.com)
+- MDN web docs at [Mozilla](https://developer.mozilla.org)
+- RS Schools Course "JavaScript/Front-end. Stage 0 (in progress)
