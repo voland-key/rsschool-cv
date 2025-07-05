@@ -15,3 +15,22 @@ Starting my career as a computer science teacher in 2000 at the public school #4
 In 2005 I graduated from the institute with a specialization in “computer-aided design of radio-electronic devices”. In 2012 I changed my specialization from sales to system administration and started to study server software such as mail servers, sip-telephony and others. Also in 2014, I started working on a project that helps medical centers organize their business processes. While working on it, I started learning JS, jQuery, MySQL, and the PHP stack.
 
 Currently, I am working on two different projects in the logistics software field and I need to learn programming tools like Git and in this course I am updating my knowledge to keep up to date.
+
+---
+### Skills and Profiency
+
+Constantly work with Linux based software: 
+
++ [Proxmox](https://proxmox.com) and ESXi
++ [Zimbra NE](https://zimbra.com) servers 
++ [Zentyal](https://zentyal.org) domain-controllers
++ [Issabel PBX](https://issabel.org) sip servers
++ [OPNsense](https://opnsense.org) and [RouterOS](https://mikrotik.org) based routers    
++ VPN software such as IPSec, Wireguard, OpenConnect and other
+
+Programming skills: 
++ JavaScript with jQuery framework
++ HTML and Bootstrap 5 CSS framework
++ MySQL, PostgreSQL
++ Redis
++ PHP 5.0++ as backend
