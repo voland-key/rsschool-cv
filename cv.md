@@ -79,3 +79,9 @@ function findOdd(A) {
 - HTML, CSS, Bootstrap Tutorials on the [W3S](https://w3schools.com)
 - MDN web docs at [Mozilla](https://developer.mozilla.org)
 - RS Schools Course "JavaScript/Front-end. Stage 0 (in progress)
+
+----
+### Languages
+
+- English - Intermediate
+- Russian - Native
