@@ -1,49 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>My CV</title>
-    <link rel="stylesheet" href="./styles.css" >
-  </head>
-  <body>
-    <div class="content">
-        <header class="header">
-            <nav class="navigation">        
-
-            </nav>
-        </header>
-        <main class="main">
-            <div class="cv-profile">
-                Hi!
-            </div>
-            <section class="main-info">
-            </section>
-            <section class="additional-info">
-            </section>
-        </main>
-        <footer class="footer">
-        <span class="footer__year">2025</span>
-            <a
-            class="footer__author"
-            href="https://github.com/voland-key"
-            target="_blank"
-            >FAS Github</a
-            >
-
-            <a
-            class="footer__logo-link"
-            href="https://rs.school/courses/javascript-ru"
-            target="_blank"
-            >
-            <img
-                class="footer__logo"
-                src="./assets/images/rs-school-logo.svg"
-                height="50"
-                alt="RS school logo"
-            >
-            </a>
-      </footer>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anton Smirnov</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+    <header class="header">
+        <nav class="topnav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contacts">Contacts</a>    
+            <a href="#code">Code</a>
+            <a href="#expireince">Expirience</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section_info">
+            <h1>Anton Smirnov</h1>
+            <h2>Frontend developer</h2>
+            <img src="images/user.jpg" class="avatar"  alt="Anton Smirnov"/>
+        </section>
+        <section class="section" id="contacts">
+            <h2>My contacts:</h2>
+            <p>
+               <ul>
+                    <li><b>Phone:</b> +7 (812) 438-00-60</li>
+                    <li><b>E-mail:</b> 3704156@gmail.com</li>
+               </ul>
+            </p>
+        </section>        
+        <section class="section" id="about">
+            <h2>Personal Summary</h2>
+            <p>Starting my career as a computer science teacher in 2000 at the public school #495 in St. Petersburg, Russia, 
+               I taught the basics of programming languages such as Pascal, Delphi and some web technologies such as the basics of HTML and CSS.
+            </p>
+            <p>After 2 years I changed my line of work to a sales manager of computer components in the largest store of my city.
+               In 2005 I graduated from the institute with a specialization in “computer-aided design of radio-electronic devices”. 
+               In 2012 I changed my specialization from sales to system administration and started to study server software such as mail servers, sip-telephony and others. 
+               Also in 2014, I started working on a project that helps medical centers organize their business processes. 
+               While working on it, I started learning JS, jQuery, MySQL, and the PHP stack.
+            </p>
+            <p>Currently, I am working on two different projects in the logistics software field and I need to learn programming tools like Git and in this course I am updating my knowledge to keep up to date.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2>Skills and Profiency</h2>
+            <p>Constantly work with Linux based software:
+                <ul>
+                    <li><a href="https://proxmox.com">Proxmox and ESXi</a> virtual environment</li>
+                    <li><a href="https://zimbra.com">Zimbra NE</a> servers</li>
+                    <li><a href="https://zentyal.com">Zentyal</a> domain-controllers</li>
+                    <li><a href="https://issabel.org">Issabel PBX</a> sip servers</li>
+                    <li><a href="https://opnsense.org">OPNsense</a> and <a href="https://mikrotik.org">RouterOS</a> based routers</li>
+                    <li>VPN software such as IPSec, Wireguard, OpenConnect and other</li>
+                </ul>
+            </p> 
+            <p>Programming skill:
+                <ul>
+                    <li>JavaScript with jQuery framework</li>
+                    <li>HTML and Bootstrap 5 CSS framework</li>
+                    <li>MySQL, PostgreSQL</li>
+                    <li>Redis database</li>
+                    <li>PHP as back-end</li>
+                </ul>
+            </p> 
+        </section>
+        <section class="section" id="code">
+            <h2>Code example</h2>
+            <p>
+                Find the odd int <a href="https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript">(KATA from CODEWARS):</a>
+                Given an array of integers, find the one that appears an odd number of times.<br>
+                There will always be only one integer that appears an odd number of times.
+            </p>
+            <p>    
+                Examples:<br>
+                <ul>
+                    <li>
+                        [7] should return 7, because it occurs 1 time (which is odd).
+                    </li>
+                    <li>
+                        [0] should return 0, because it occurs 1 time (which is odd).
+                    </li>
+                    <li>
+                        [1,1,2] should return 2, because it occurs 1 time (which is odd).
+                    </li>
+                    <li>
+                        [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+                    </li>
+                    <li>
+                        [7] should return 7, because it occurs 1 time (which is odd).
+                    </li>
+                    <li>
+                        [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
+                    </li>
+                </ul>
+            </p>
+            <pre>My Solution is:
+                <code>
+                    function findOdd(A) {
+                        const uniqueArray = []
+                        var res = 0
+                        // generate unique array
+                        A.forEach(item => {
+                            if (!uniqueArray.includes(item)) {
+                                uniqueArray.push(item)
+                            }
+                        })
+                        // count length of entries unique array in A array
+                        uniqueArray.forEach(item => {
+                            let idx = A.indexOf(item),
+                                indices = [];
+                            while (idx != -1) {
+                            indices.push(idx);
+                            idx = A.indexOf(item, idx + 1);
+                            }
+                            // if it ODD - then return
+                            if (indices.length % 2 > 0) { 
+                            res = item 
+                            }
+                            
+                        });
+                    }    
+                </code>
+            </pre>
+        </section>
+        <section class="section" id="expireince">
+            <h2>Courses</h2>
+            <ul>
+                <li>
+                    HTML, CSS, Bootstrap Tutorials on the <a href="https://w3schools.com">W3S</a>
+                </li>
+                <li>
+                    MDN web docs at <a href="https://developer.mozilla.org">Mozilla</a>
+                </li>     
+                <li>
+                   RS Schools Course "JavaScript/Front-end. Stage 0 (in progress)
+                </li> 
+            </ul>
+            <h2>Languages</h2>
+                <ul>
+                    <li>
+                        English - Intermediate
+                    </li>
+                    <li>
+                        Russian - Native
+                    </li>
+                </ul>                                                                          
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="https://github.com/voland-key" target="_blank">GITHUB</a>
+        <span>&copy; 2025</span>
+        <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+        <img class="logo" src="./assets/images/rs-school-logo.svg" alt="rs-school-logo"/>
+        </a>
+    </footer>
+    </body>
 </html>
