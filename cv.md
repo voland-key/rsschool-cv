@@ -2,6 +2,7 @@
 ### System Engineer
 
 ---
+
 ### Contacts
 
 **Phone:** +7 (812) 438-00-60
@@ -17,6 +18,7 @@ In 2005 I graduated from the institute with a specialization in “computer-aide
 Currently, I am working on two different projects in the logistics software field and I need to learn programming tools like Git and in this course I am updating my knowledge to keep up to date.
 
 ---
+
 ### Skills and Profiency
 
 Constantly work with Linux based software: 
@@ -36,6 +38,7 @@ Programming skills:
 + PHP 5.0++ as backend
 
 ---
+
 ### Code example:
 
 **Find the odd int [KATA from CODEWARS](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript):**
@@ -84,4 +87,4 @@ function findOdd(A) {
 ### Languages
 
 - English - Intermediate
-- Russian - Native
+- Russian -
